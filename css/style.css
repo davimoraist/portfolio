@@ -1,0 +1,118 @@
+ @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --Roboto: 'Roboto', sans-serif;
+    --OpenSans: 'Open Sans', sans-serif;
+
+    --cor1: #0d1712;
+    --cor2: #1a3338;
+    --cor3: #4fd1bf;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--Roboto);
+    background-color: var(--cor2);
+    color: white;
+
+ }
+
+  header{
+    padding: 40px 4%;
+    background-color: var(--cor1);
+}
+
+header > .capaça{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo continua normal */
+
+header > .capaça > .logo {
+    display: flex;
+    align-items: center;
+}
+header > .capaça > .logo img{
+    width: 120px;
+    height: 120px;
+}
+
+header > .capaça > .logo > h1{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Menu centralizado */
+header > .capaça > .menu{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header > .capaça > .menu > nav > ul{
+    padding: 0;
+    margin: 0;
+}
+
+header > .capaça > .menu > nav > ul > li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+
+header > .capaça > .menu > nav > ul > li > a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 26px;
+    transition: .2s;
+}
+
+
+header > .capaça > .menu > nav > ul > li > a:hover{
+    background-color: var(--cor3);
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 100px;
+    gap: 60px;
+}
+
+/* Foto */
+.perfil > .foto > img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Texto */
+.perfil > .text{
+    max-width: 600px;
+}
+
+.perfil > .text > h2{
+    margin: 10px 0;
+    font-size: 40px;
+    font-family: var(--OpenSans);
+}
+
+.perfil > .text > p{
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 20px;
+}
