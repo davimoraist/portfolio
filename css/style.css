@@ -1,1 +1,53 @@
- 
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ :root{
+    --lato-font-family: 'Lato', sans-serif;
+    --oswald-font-family: 'Oswald', sans-serif;
+    --roboto-font-family: 'Roboto', sans-serif;
+    
+    --cor1:#2563EB;
+    --cor2:#1D4EB8;
+    --cor3:#153885;
+    --cor4:#445579;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: var(--lato-font-family);
+ }
+
+ .container {
+     background-image: url("/img/banner2.png ");
+     background-repeat: no-repeat;
+     background-size: cover;
+     color: #fff;
+     background-position: center top;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .apresentação{
+    position: absolute;
+    margin: 34px;
+    padding: 40px;
+    top: 485px;
+    left: 36px;
+    
+ }
+
+ .saudacao{
+    font-family: var(--oswald-font-family);
+    font-size: 30px;
+    font-weight: 400;
+ }
