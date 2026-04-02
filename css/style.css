@@ -86,3 +86,63 @@
  .botao a:hover {
      background-color: var(--cor1);
  }
+ 
+ .conpo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 60px;
+     padding: 50px;
+ }
+
+ /* IMAGEM */
+ .img-conpo img {
+     width: 400px;
+     border-radius: 10px;
+ }
+
+ /* BLOCO DE TEXTO */
+ .texto-conpo {
+     max-width: 600px;
+     display: flex;
+     flex-direction: column;
+     /* organiza texto em coluna */
+ }
+
+ /* TÍTULOS */
+ .texto-conpo h1 {
+     font-weight: 900;
+     font-size: 50px;
+     margin-bottom: 20px;
+ }
+
+ .texto-conpo h2 {
+     font-weight: 300;
+     margin-bottom: 15px;
+ }
+
+ .texto-conpo p {
+     margin-bottom: 15px;
+     line-height: 1.5;
+ }
+
+ /* LOGOS EMBAIXO DO TEXTO */
+  /* LOGOS EMBAIXO DO TEXTO */
+  .logo {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      /* Permite que as logos quebrem a linha em telas menores */
+      gap: 15px;
+      /* Espaço entre as logos */
+      margin-top: 20px;
+      /* Distância do último parágrafo */
+  }
+
+  .logo img {
+      height: 40px;
+      /* Reduzi um pouco para ficar proporcional ao texto, ajuste como preferir */
+      width: auto;
+      /* Mantém a proporção da imagem */
+      object-fit: contain;
+  }
