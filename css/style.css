@@ -91,6 +91,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     margin: 100px 0;
      gap: 60px;
      padding: 50px;
  }
@@ -146,3 +147,30 @@
       /* Mantém a proporção da imagem */
       object-fit: contain;
   }
+
+  .projeto h1 {
+    background-color: var(--cor1);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .mosta-projto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
+ .mosta-projto .mosta {
+     border: 1px solid #000000;
+     margin: 40px;
+     height: 450px;
+     width: 800px;
+    display: flex;
+    flex-direction: column;
+        align-items: center;
+        justify-content: center;
+ }
