@@ -8,7 +8,7 @@
      --lato-font-family: 'Lato', sans-serif;
      --oswald-font-family: 'Oswald', sans-serif;
      --roboto-font-family: 'Roboto', sans-serif;
-
+        --cor2: #333;
      --cor1: #2563EB;
  }
 
@@ -91,7 +91,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     margin: 100px 0;
+     margin: 165px 0;
      gap: 60px;
      padding: 50px;
  }
@@ -148,29 +148,116 @@
       object-fit: contain;
   }
 
-  .projeto h1 {
-    background-color: var(--cor1);
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-    margin-bottom: 30px;
+  .projeto{
+    margin: 300px 0;
+  }
+  
+ .projeto h1 {
+     background-color: var(--cor1);
+     color: #fff;
+     text-align: center;
+     font-weight: bold;
+     padding: 20px;
+     margin-bottom: 30px;
+ }
+
+ /* Container principal */
+ .mosta-projto {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+     width: 100%;
+ }
+
+ /* Container dos slides */
+ .slides-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+ }
+
+  /* Slide */
+  .mosta-projto .mosta {
+      border: 1px solid #000000;
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      height: 500px;
+      display: none;
+      border-radius: 10px;
+      overflow: hidden;
+      /* importante */
   }
 
-  .mosta-projto {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  /* Imagem ocupa tudo */
+  .mosta-projto .mosta img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* preenche sem distorcer */
   }
 
+  /* Texto embaixo da imagem */
+  .mosta-projto .mosta .janela{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
 
- .mosta-projto .mosta {
-     border: 1px solid #000000;
-     margin: 40px;
-     height: 450px;
-     width: 800px;
-    display: flex;
-    flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      background: rgba(0, 0, 0, 0.6);
+      /* fundo escuro transparente */
+      color: #fff;
+      text-align: center;
+  }
+
+  .mosta-projto .mosta .janela a{
+        color: #fff;
+        background-color: var(--cor1);
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+        padding: 10px 15px;
+        border-radius: 5px;
+  }
+
+  /* Slide ativo */
+  .mosta-projto .mosta.ativo {
+      display: block;
+  }
+
+ /* Botões */
+ .controles {
+     display: flex;
+     gap: 15px;
+     margin-bottom: 20px;
+ }
+
+ .controles button {
+     padding: 10px 20px;
+     cursor: pointer;
+     background-color: var(--cor2);
+     color: white;
+     border: none;
+     border-radius: 5px;
+     transition: 0.3s;
+ }
+
+ .controles button:hover {
+     opacity: 0.8;
+ }
+
+ /* Animação */
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateX(20px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateX(0);
+     }
  }
