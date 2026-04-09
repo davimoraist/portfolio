@@ -30,5 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
     mostrarSlide(indexAtual);
 
     // Cria o loop automático
-    //setInterval(proximoSlide, tempoTroca);
+    setInterval(proximoSlide, tempoTroca);
 });
+
+function enviar() {
+    var nome = document.getElementById("nome").value;
+    var telefone = document.getElementById("telefone").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    console.log("Nome: " + nome);
+    console.log("Telefone: " + telefone);
+    console.log("Mensagem: " + mensagem);
+
+    const fone = "556195756256";
+    window.open(`https://wa.me/${fone}?text=${mensagem}`, '_blank')
+    document.getElementById("nome").value = "";
+    document.getElementById("telefone").value = "";
+    document.getElementById("mensagem").value = "";
+
+    alert("Mensagem enviada com sucesso!");
+}

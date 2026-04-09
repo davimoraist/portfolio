@@ -8,10 +8,11 @@
      --lato-font-family: 'Lato', sans-serif;
      --oswald-font-family: 'Oswald', sans-serif;
      --roboto-font-family: 'Roboto', sans-serif;
-        --cor2: #333;
+     --cor2: #333;
      --cor1: #2563EB;
  }
 
+ /* RESET */
  * {
      margin: 0;
      padding: 0;
@@ -20,12 +21,12 @@
 
  body {
      font-family: var(--lato-font-family);
+     background: #f5f7fa;
  }
 
- /* FUNDO */
+ /* HERO */
  .container {
      background-image: url("/img/Gemini_Generated_Image_wnjpwownjpwownjp.png");
-     background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
      height: 100vh;
@@ -35,38 +36,35 @@
      justify-content: flex-start;
 
      color: #fff;
+     padding: 20px;
  }
 
- /* TEXTO */
  .apresentacao {
      margin-left: 60px;
  }
 
  .saudacao {
      font-family: var(--oswald-font-family);
-     font-size: 50px;
+     font-size: 40px;
  }
 
- /* NOME */
  .nome {
      font-family: var(--roboto-font-family);
-     font-size: 70px;
+     font-size: 60px;
      font-weight: 700;
-     margin: -20px 0 20px;
+     margin: -10px 0 20px;
  }
 
- /* CORES DO NOME */
  .primeiro {
-     color: white;
+     color: #fff;
  }
 
  .segundo {
      color: var(--cor1);
  }
 
- /* TEXTO */
  .texto-apresentacao {
-     font-size: 35px;
+     font-size: 22px;
      margin-bottom: 20px;
  }
 
@@ -74,190 +72,263 @@
  .botao a {
      text-decoration: none;
      color: #fff;
-     font-size: 18px;
+     font-size: 16px;
      font-weight: bold;
      margin-right: 10px;
      padding: 10px 15px;
-     background-color: black;
-     border-radius: 5px;
+     background-color: #000;
+     border-radius: 8px;
      transition: 0.3s;
  }
 
  .botao a:hover {
      background-color: var(--cor1);
  }
- 
+
+ /* SOBRE */
  .conpo {
      display: flex;
      align-items: center;
      justify-content: center;
-     margin: 165px 0;
+     margin: 100px 20px;
      gap: 60px;
-     padding: 50px;
+     padding: 40px;
+     flex-wrap: wrap;
+
+     background: #fff;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
  }
 
- /* IMAGEM */
  .img-conpo img {
-     width: 400px;
+     width: 100%;
+     max-width: 350px;
      border-radius: 10px;
  }
 
- /* BLOCO DE TEXTO */
  .texto-conpo {
      max-width: 600px;
-     display: flex;
-     flex-direction: column;
-     /* organiza texto em coluna */
  }
 
- /* TÍTULOS */
  .texto-conpo h1 {
+     font-size: 40px;
      font-weight: 900;
-     font-size: 50px;
-     margin-bottom: 20px;
+     margin-bottom: 15px;
  }
 
  .texto-conpo h2 {
-     font-weight: 300;
+     font-weight: 400;
      margin-bottom: 15px;
  }
 
  .texto-conpo p {
-     margin-bottom: 15px;
-     line-height: 1.5;
+     margin-bottom: 10px;
+     line-height: 1.6;
  }
 
- /* LOGOS EMBAIXO DO TEXTO */
-  /* LOGOS EMBAIXO DO TEXTO */
-  .logo {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      /* Permite que as logos quebrem a linha em telas menores */
-      gap: 15px;
-      /* Espaço entre as logos */
-      margin-top: 20px;
-      /* Distância do último parágrafo */
-  }
+ /* LOGOS */
+ .logo {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     margin-top: 15px;
+ }
 
-  .logo img {
-      height: 40px;
-      /* Reduzi um pouco para ficar proporcional ao texto, ajuste como preferir */
-      width: auto;
-      /* Mantém a proporção da imagem */
-      object-fit: contain;
-  }
+ .logo img {
+     height: 35px;
+ }
 
-  .projeto{
-    margin: 300px 0;
-  }
-  
+ /* PROJETOS */
+ .projeto {
+     margin: 100px 20px;
+ }
+
  .projeto h1 {
-     background-color: var(--cor1);
+     background: var(--cor1);
      color: #fff;
      text-align: center;
-     font-weight: bold;
-     padding: 20px;
+     padding: 15px;
+     border-radius: 10px;
      margin-bottom: 30px;
  }
 
- /* Container principal */
  .mosta-projto {
      display: flex;
      flex-direction: column;
      align-items: center;
      gap: 20px;
-     width: 100%;
  }
 
- /* Container dos slides */
  .slides-container {
+     width: 100%;
      display: flex;
      justify-content: center;
-     align-items: center;
-     width: 100%;
  }
 
-  /* Slide */
-  .mosta-projto .mosta {
-      border: 1px solid #000000;
-      position: relative;
-      width: 90%;
-      max-width: 800px;
-      height: 500px;
-      display: none;
-      border-radius: 10px;
-      overflow: hidden;
-      /* importante */
-  }
+ .mosta {
+     display: none;
+     width: 90%;
+     max-width: 800px;
+     height: 400px;
+     border-radius: 10px;
+     overflow: hidden;
+     position: relative;
+ }
 
-  /* Imagem ocupa tudo */
-  .mosta-projto .mosta img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* preenche sem distorcer */
-  }
+ .mosta img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
 
-  /* Texto embaixo da imagem */
-  .mosta-projto .mosta .janela{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 20px;
+ .mosta .janela {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     padding: 15px;
+     background: rgba(0, 0, 0, 0.6);
+     text-align: center;
+ }
 
-      background: rgba(0, 0, 0, 0.6);
-      /* fundo escuro transparente */
-      color: #fff;
-      text-align: center;
-  }
+ .mosta .janela a {
+     background: var(--cor1);
+     color: #fff;
+     padding: 10px 15px;
+     border-radius: 5px;
+     text-decoration: none;
+ }
 
-  .mosta-projto .mosta .janela a{
-        color: #fff;
-        background-color: var(--cor1);
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-        padding: 10px 15px;
-        border-radius: 5px;
-  }
+ .mosta.ativo {
+     display: block;
+ }
 
-  /* Slide ativo */
-  .mosta-projto .mosta.ativo {
-      display: block;
-  }
-
- /* Botões */
+ /* BOTÕES */
  .controles {
      display: flex;
-     gap: 15px;
-     margin-bottom: 20px;
+     gap: 10px;
  }
 
  .controles button {
-     padding: 10px 20px;
-     cursor: pointer;
-     background-color: var(--cor2);
-     color: white;
+     padding: 10px 15px;
+     background: var(--cor2);
+     color: #fff;
      border: none;
      border-radius: 5px;
-     transition: 0.3s;
+     cursor: pointer;
  }
 
  .controles button:hover {
      opacity: 0.8;
  }
 
- /* Animação */
- @keyframes fadeIn {
-     from {
-         opacity: 0;
-         transform: translateX(20px);
+ /* CONTATO */
+ .contato {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 30px;
+
+     padding: 50px 30px;
+     margin: 100px auto;
+
+     background: #fff;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+     width: 90%;
+     max-width: 900px;
+ }
+
+ .contato h1 {
+     font-size: 35px;
+     color: var(--cor1);
+ }
+
+ .box-contato {
+     display: flex;
+     gap: 40px;
+     width: 100%;
+     flex-wrap: wrap;
+ }
+
+ .texto-do-contato {
+     max-width: 400px;
+     font-size: 16px;
+     line-height: 1.6;
+ }
+
+ .texto-do-contato p {
+     font-weight: bold;
+     margin-bottom: 10px;
+ }
+
+ /* FORM */
+ .mensagem form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 300px;
+ }
+
+ .mensagem input,
+ .mensagem textarea {
+     padding: 12px;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+     background: #f9fafb;
+ }
+
+ .mensagem textarea {
+     height: 120px;
+     resize: none;
+ }
+
+ .mensagem button {
+     padding: 12px;
+     border: none;
+     border-radius: 10px;
+     background: var(--cor1);
+     color: #fff;
+     font-weight: bold;
+     cursor: pointer;
+ }
+
+ .mensagem button:hover {
+     background: #1e40af;
+ }
+
+ /* RESPONSIVO */
+ @media (max-width: 768px) {
+
+     .container {
+         justify-content: center;
+         text-align: center;
      }
 
-     to {
-         opacity: 1;
-         transform: translateX(0);
+     .apresentacao {
+         margin-left: 0;
+     }
+
+     .nome {
+         font-size: 45px;
+     }
+
+     .texto-apresentacao {
+         font-size: 18px;
+     }
+
+     .conpo {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .box-contato {
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+     }
+
+     .mensagem form {
+         width: 100%;
      }
  }
