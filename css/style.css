@@ -25,19 +25,18 @@
  }
 
  /* HERO */
- .container {
-     background-image: url("/img/capabanner.png");
-     background-size: cover;
-     background-position: center;
-     height: 100vh;
-
-     display: flex;
-     align-items: center;
-     justify-content: flex-start;
-
-     color: #fff;
-     padding: 20px;
- }
+  .container {
+      /* Remova a barra antes de 'img' */
+      background-image: url("../img/capabanner.png");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #fff;
+      padding: 20px;
+  }
 
  .apresentacao {
      margin-left: 60px;
